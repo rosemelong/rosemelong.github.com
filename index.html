@@ -7501,8 +7501,7 @@
     };
 
     // 2012.08.27 부터 추가되는 FUNC
-
-    var gText = ['상위어', '동의어', '하위어', '대체어'];
+    var gText = ['정문(精門)', '기문(氣門)', '신문(神門)', '증혈문(血門)'];
     var gTextPos = [{x:0, y:100},{x:100, y:0}, {x:0, y:-100}, {x:-100, y:0}];
 
     var count = 0;
@@ -8157,7 +8156,7 @@
      * 기준어의 아이디와 Text를 가져옴
     *************************/
     //var item_text = '공(工)';
-    var centerItem = {id:'1', text:'인내심(忍耐心)'};
+    var centerItem = {id:'1', text:'수승화강(水升火降)'};
     var item_text = centerItem.text;
 
     /* ***********************
@@ -8188,13 +8187,20 @@
     var depthQue = {bt:0, et:0, nt:0, vt:0, reset : function() {this.bt = 0; this.eq=0; this.nt=0; this.vt=0;}};
 
     // (test용 data) view item 생성
+    // var itemTexts = [
+    //     {name : "BT", text : '상위(上位語多斡間)', id : '00000001'},
+    //     {name : "BT", text : '위상(上位語多斡間)', id : '00000005'},
+    //     {name : "EQ", text : '동의(同意語多斡間)', id : '00000002'},
+    //     {name : "NT", text : '하위(下位語多斡間)', id : '00000003'},
+    //     {name : "VT", text : '대체(代替語多斡間)', id : '00000004'}
+    // ];
     var itemTexts = [
-        {name : "BT", text : '상위(上位語多斡間)', id : '00000001'},
-        {name : "BT", text : '위상(上位語多斡間)', id : '00000005'},
-        {name : "EQ", text : '동의(同意語多斡間)', id : '00000002'},
-        {name : "NT", text : '하위(下位語多斡間)', id : '00000003'},
-        {name : "VT", text : '대체(代替語多斡間)', id : '00000004'}
-    ];
+        {name : "BT", text : '정문(精門)', id : '00000001'},
+        {name : "BT", text : '기문(氣門)', id : '00000005'},
+        {name : "EQ", text : '신문(神門)', id : '00000002'},
+        {name : "NT", text : '혈문(血門)', id : '00000003'},
+        {name : "VT", text : '심장문(心臟門)', id : '00000004'}
+    ];    
     createItemText();
 
     var ocenter = {x : xCE, y : yCE, textfill : 'black', fontsize : 10, w : wcentext, h: 25, fontstyle : 'bold', sh :  {
